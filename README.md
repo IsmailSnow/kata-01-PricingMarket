@@ -13,6 +13,7 @@ Creating models : -->ShoppingCart(contains a list of cartItem,...)
 Calcul :   -when we get the shoppingCart
                 -we create a map<OfferType,List<Cartitem>>
                 -the item that contain offer but we can not apply them will be consider as without offre 
+                 -an item without offre have the case : empty list of offre or an offre with offertype none and a code 000
             -after the creating of map, we use a desgin pattern chain of responsabilty to chain the operations of calcul of different list and we return in the end the final price
             -in our item we implement a StrategyOperation that will help us to define the strategy of discount that we will apply for each item 
  
